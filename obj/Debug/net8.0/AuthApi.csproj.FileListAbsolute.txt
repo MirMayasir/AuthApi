@@ -110,3 +110,5 @@ C:\Users\mirma\Desktop\AuthApi\obj\Debug\net8.0\refint\AuthApi.dll
 C:\Users\mirma\Desktop\AuthApi\obj\Debug\net8.0\AuthApi.pdb
 C:\Users\mirma\Desktop\AuthApi\obj\Debug\net8.0\AuthApi.genruntimeconfig.cache
 C:\Users\mirma\Desktop\AuthApi\obj\Debug\net8.0\ref\AuthApi.dll
+C:\Users\mirma\Desktop\AuthApi\bin\Debug\net8.0\BCrypt.Net-Next.dll
+C:\Users\mirma\Desktop\AuthApi\obj\Debug\net8.0\AuthApi.sourcelink.json

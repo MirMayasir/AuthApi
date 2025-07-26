@@ -21,19 +21,35 @@ namespace AuthApi.Controllers
         [HttpPost("register")]
         public async Task<IActionResult> Register(User user)
         {
-            _context.Users.Add(user);
+            if(await _context.Users.AllAsync(u=>u.Username == user.Username))
+            {
+                return BadRequest("user already exists");
+            }
+
+            user.Password = BCrypt.Net.BCrypt.HashPassword(user.Password);
+
+            _context.Add(user);
             await _context.SaveChangesAsync();
-            return Ok("User registered successfully");
+
+            return Ok("user registered successfully");
+
         }
 
         [HttpPost("login")]
         public async Task<IActionResult> Login(LoginRequest request)
         {
             var user = await _context.Users
-                .FirstOrDefaultAsync(u => u.Username == request.Username && u.Password == request.Password);
+                .FirstOrDefaultAsync(u => u.Username == request.Username);
 
             if (user == null)
                 return Unauthorized("Invalid credentials");
+
+            bool isPassword = BCrypt.Net.BCrypt.Verify(request.Password, user.Password);
+
+            if (!isPassword)
+            {
+                return Unauthorized("invalid password");
+            }
 
             var token = JwtTokenService.GenerateToken(user.Username);
             return Ok(new { Token = token });
