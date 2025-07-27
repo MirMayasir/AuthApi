@@ -98,11 +98,6 @@ C:\Users\mirma\Desktop\AuthApi\obj\Debug\net8.0\AuthApi.MvcApplicationPartsAssem
 C:\Users\mirma\Desktop\AuthApi\obj\Debug\net8.0\AuthApi.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\mirma\Desktop\AuthApi\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\mirma\Desktop\AuthApi\obj\Debug\net8.0\staticwebassets.development.json
-C:\Users\mirma\Desktop\AuthApi\obj\Debug\net8.0\staticwebassets\msbuild.AuthApi.Microsoft.AspNetCore.StaticWebAssets.props
-C:\Users\mirma\Desktop\AuthApi\obj\Debug\net8.0\staticwebassets\msbuild.build.AuthApi.props
-C:\Users\mirma\Desktop\AuthApi\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.AuthApi.props
-C:\Users\mirma\Desktop\AuthApi\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.AuthApi.props
-C:\Users\mirma\Desktop\AuthApi\obj\Debug\net8.0\staticwebassets.pack.json
 C:\Users\mirma\Desktop\AuthApi\obj\Debug\net8.0\scopedcss\bundle\AuthApi.styles.css
 C:\Users\mirma\Desktop\AuthApi\obj\Debug\net8.0\AuthApi.csproj.Up2Date
 C:\Users\mirma\Desktop\AuthApi\obj\Debug\net8.0\AuthApi.dll
@@ -112,3 +107,11 @@ C:\Users\mirma\Desktop\AuthApi\obj\Debug\net8.0\AuthApi.genruntimeconfig.cache
 C:\Users\mirma\Desktop\AuthApi\obj\Debug\net8.0\ref\AuthApi.dll
 C:\Users\mirma\Desktop\AuthApi\bin\Debug\net8.0\BCrypt.Net-Next.dll
 C:\Users\mirma\Desktop\AuthApi\obj\Debug\net8.0\AuthApi.sourcelink.json
+C:\Users\mirma\Desktop\AuthApi\bin\Debug\net8.0\AuthApi.staticwebassets.endpoints.json
+C:\Users\mirma\Desktop\AuthApi\obj\Debug\net8.0\rpswa.dswa.cache.json
+C:\Users\mirma\Desktop\AuthApi\obj\Debug\net8.0\rjimswa.dswa.cache.json
+C:\Users\mirma\Desktop\AuthApi\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
+C:\Users\mirma\Desktop\AuthApi\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
+C:\Users\mirma\Desktop\AuthApi\obj\Debug\net8.0\staticwebassets.build.json.cache
+C:\Users\mirma\Desktop\AuthApi\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\mirma\Desktop\AuthApi\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
