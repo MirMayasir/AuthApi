@@ -52,7 +52,9 @@ namespace AuthApi.Controllers
             }
 
             var token = JwtTokenService.GenerateToken(user.Username);
-            return Ok(new { Token = token });
+            return Ok(new { Token = token,
+            user.Username
+            });
         }
     }
 }
