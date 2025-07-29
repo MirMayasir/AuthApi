@@ -3,4 +3,5 @@ Front end to be developed soon
 
 
 ...............
-Backend 
+Backend consists of AuthApi 
+Authorization & Authentication 
