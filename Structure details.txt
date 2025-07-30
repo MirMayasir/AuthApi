@@ -5,3 +5,8 @@ Front end to be developed soon
 ...............
 Backend consists of AuthApi 
 Authorization & Authentication 
+
+
+JWT Token added 
+
+Role based authentication yet to add 
