@@ -2,6 +2,8 @@
 Front end to be developed soon
 Components yet to be added 
 
+Targets to be completed before 10 Aug
+
 
 ...............
 Backend consists of AuthApi 
