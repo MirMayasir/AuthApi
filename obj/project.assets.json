@@ -3102,23 +3102,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\mirma\\.nuget\\packages\\": {},
+    "C:\\Users\\mmayasi\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mirma\\Desktop\\AuthApi\\AuthApi.csproj",
+      "projectUniqueName": "C:\\Users\\mmayasi\\Desktop\\githubAction\\AuthApi\\AuthApi.csproj",
       "projectName": "AuthApi",
-      "projectPath": "C:\\Users\\mirma\\Desktop\\AuthApi\\AuthApi.csproj",
-      "packagesPath": "C:\\Users\\mirma\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mirma\\Desktop\\AuthApi\\obj\\",
+      "projectPath": "C:\\Users\\mmayasi\\Desktop\\githubAction\\AuthApi\\AuthApi.csproj",
+      "packagesPath": "C:\\Users\\mmayasi\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\mmayasi\\Desktop\\githubAction\\AuthApi\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\mirma\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\mmayasi\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -3207,7 +3207,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
