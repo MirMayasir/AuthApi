@@ -17,10 +17,9 @@ namespace AuthApi
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
 
-            // Configure MySQL
-            var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+            // Configure In-Memory Database
             builder.Services.AddDbContext<AppDbContext>(options =>
-                options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString)));
+                options.UseInMemoryDatabase("AuthDb")); 
 
             // JWT Key
             var key = Encoding.UTF8.GetBytes("ThisIsASecretKeyForJWTToken@123456!");

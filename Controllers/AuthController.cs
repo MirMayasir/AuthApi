@@ -2,6 +2,7 @@
 using AuthApi.Models;
 using AuthApi.Services;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Identity.Data;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
@@ -19,16 +20,20 @@ namespace AuthApi.Controllers
         }
 
         [HttpPost("register")]
-        public async Task<IActionResult> Register(User user)
+        public async Task<IActionResult> Register(RegisterRequestDto user)
         {
-            if(await _context.Users.AllAsync(u=>u.Username == user.Username))
+            if(await _context.Users.AnyAsync(u=>u.Username == user.Username))
             {
                 return BadRequest("user already exists");
             }
 
-            user.Password = BCrypt.Net.BCrypt.HashPassword(user.Password);
+            var newUser = new User
+            {
+                Username = user.Username,
+                Password = BCrypt.Net.BCrypt.HashPassword(user.Password)
+            };
 
-            _context.Add(user);
+            _context.Users.Add(newUser);
             await _context.SaveChangesAsync();
 
             return Ok("user registered successfully");
@@ -36,7 +41,7 @@ namespace AuthApi.Controllers
         }
 
         [HttpPost("login")]
-        public async Task<IActionResult> Login(LoginRequest request)
+        public async Task<IActionResult> Login(Models.LoginRequest request)
         {
             var user = await _context.Users
                 .FirstOrDefaultAsync(u => u.Username == request.Username);

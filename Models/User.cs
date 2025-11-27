@@ -4,8 +4,8 @@ namespace AuthApi.Models
 {
     public class User
     {
-        public int id { get; set; }
-
+    
+        public Guid Id { get; set; } = Guid.NewGuid();
         [Required, MaxLength(15, ErrorMessage ="Username cannot exceed 15 characters")]
         [MinLength(5, ErrorMessage ="Username should have atleast 5 characters")]
         public string Username { get; set; } = string.Empty;
